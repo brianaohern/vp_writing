@@ -21,6 +21,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -50,9 +51,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 @keyframes stagger-load {
+
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -61,11 +64,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
+
 /* Normalize
 --------------------------------------------- */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
 	 ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -77,6 +84,7 @@ html {
 
 /* Sections
 	 ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
@@ -102,6 +110,7 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -123,6 +132,7 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -188,6 +198,7 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
+
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -197,6 +208,7 @@ img {
 
 /* Forms
 	 ========================================================================== */
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -342,6 +354,7 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -358,6 +371,7 @@ summary {
 
 /* Misc
 	 ========================================================================== */
+
 /**
  * Add the correct display in IE 10+.
  */
@@ -374,6 +388,7 @@ template {
 
 /* Box sizing
 --------------------------------------------- */
+
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -389,6 +404,7 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
+
 /* Typography
 --------------------------------------------- */
 body,
@@ -397,7 +413,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #7BEAF3;
+	color: #7beaf3;
 	font-family: "Playfair Display", serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -574,15 +590,18 @@ a:visited {
 	color: #ffd101;
 }
 
-a:hover, a:focus, a:active {
-	color: #7BEAF3;
+a:hover,
+a:focus,
+a:active {
+	color: #7beaf3;
 }
 
 a:focus {
 	outline: thin dotted;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
 	outline: 0;
 }
 
@@ -605,19 +624,20 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #7BEAF3;
-	background: #7BEAF3;
+	border-color: #7beaf3;
+	background: #7beaf3;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #7BEAF3;
-	background: #7BEAF3;
+	border-color: #7beaf3;
+	background: #7beaf3;
 }
 
 input[type="text"],
@@ -672,9 +692,11 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
@@ -737,8 +759,8 @@ textarea {
 	padding-right: 0;
 }
 
-.main-navigation li.menu-item-has-children > a:after {
-	content: '\f0d7';
+.main-navigation li.menu-item-has-children > a::after {
+	content: "\f0d7";
 	font-family: "FontAwesome";
 	padding-left: 10px;
 }
@@ -761,16 +783,20 @@ textarea {
 }
 
 @media screen and (min-width: 37.5em) {
+
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: flex;
 	}
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -865,7 +891,7 @@ textarea {
 #masthead .site-branding .site-description {
 	margin: 0 0 0 30px;
 	font-size: 22px;
-	color: #7BEAF3;
+	color: #7beaf3;
 }
 
 #masthead #site-navigation {
@@ -930,43 +956,43 @@ footer .site-info .footer-menu #footer-menu li {
 .archive .column-wrapper article {
 	padding: 0 10px;
 	opacity: 0;
-	animation: 1s ease 1 stagger-load forwards;
+	animation: 1s ease 0.5s stagger-load forwards;
 }
 
 .archive .column-wrapper article:nth-child(1) {
-	animation-delay: 0.66667s;
+	animation-delay: 0.33333s;
 }
 
 .archive .column-wrapper article:nth-child(2) {
-	animation-delay: 1.33333s;
+	animation-delay: 0.66667s;
 }
 
 .archive .column-wrapper article:nth-child(3) {
-	animation-delay: 2s;
+	animation-delay: 1s;
 }
 
 .archive .column-wrapper article:nth-child(4) {
-	animation-delay: 2.66667s;
+	animation-delay: 1.33333s;
 }
 
 .archive .column-wrapper article:nth-child(5) {
-	animation-delay: 3.33333s;
+	animation-delay: 1.66667s;
 }
 
 .archive .column-wrapper article:nth-child(6) {
-	animation-delay: 4s;
+	animation-delay: 2s;
 }
 
 .archive .column-wrapper article:nth-child(7) {
-	animation-delay: 4.66667s;
+	animation-delay: 2.33333s;
 }
 
 .archive .column-wrapper article:nth-child(8) {
-	animation-delay: 5.33333s;
+	animation-delay: 2.66667s;
 }
 
 .archive .column-wrapper article:nth-child(9) {
-	animation-delay: 6s;
+	animation-delay: 3s;
 }
 
 .archive .column-wrapper article .entry-header {
@@ -1172,8 +1198,10 @@ footer .site-info .footer-menu #footer-menu li {
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
+
 /* Jetpack infinite scroll
 --------------------------------------------- */
+
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -1188,8 +1216,10 @@ footer .site-info .footer-menu #footer-menu li {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
+
 /* Accessibility
 --------------------------------------------- */
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -1232,16 +1262,20 @@ footer .site-info .footer-menu #footer-menu li {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
+
 	/*rtl:ignore*/
 	float: left;
+
 	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
+
 	/*rtl:ignore*/
 	float: right;
+
 	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
@@ -1258,85 +1292,106 @@ footer .site-info .footer-menu #footer-menu li {
 /* Responsiveness
 --------------------------------------------- */
 @media screen and (max-width: 1030px) {
+
 	#masthead {
 		padding-bottom: 10px;
 		padding-top: 0;
 	}
+
 	#masthead .site-branding .site-description {
 		margin-left: 0;
 	}
+
 	.main-navigation li {
 		padding: 20px 10px;
 	}
+
 	.container.has-sidebar #secondary {
 		flex-basis: 250px;
 		padding: 0;
 	}
+
 	.archive .entry-content,
 	.archive .entry-header,
 	.archive .entry-meta {
 		padding: 0 15px;
 	}
+
 	.archive .column-wrapper article .entry-title {
 		font-size: 24px;
 	}
 }
 
 @media screen and (max-width: 990px) {
+
 	#masthead {
 		flex-wrap: wrap;
 		text-align: center;
 	}
+
 	#masthead .site-branding {
 		flex-basis: 100%;
 	}
+
 	#masthead #site-navigation {
 		flex-basis: 100%;
 	}
+
 	#masthead #site-navigation.main-navigation ul {
 		justify-content: center;
 		margin-top: 15px;
 	}
+
 	#masthead #site-navigation.main-navigation ul li {
 		padding-bottom: 0;
 	}
+
 	.archive .three-col article {
 		flex-basis: 50%;
 	}
+
 	footer .site-info .footer-menu #footer-menu li {
 		padding: 0 0 0 15px;
 	}
 }
 
 @media screen and (max-width: 768px) {
+
 	.main-navigation li {
 		font-size: 90%;
 	}
+
 	footer .site-info {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
 	footer .site-info .footer-menu {
 		flex-basis: 100%;
 		justify-content: center;
 		margin-bottom: 15px;
 	}
+
 	.container.has-sidebar {
 		flex-wrap: wrap;
 	}
+
 	.container.has-sidebar #secondary {
 		flex-basis: 100%;
 		margin: 0 30px 30px;
 	}
+
 	.archive .three-col article {
 		flex-basis: 100%;
 	}
 }
 
 @media screen and (max-width: 599px) {
+
 	#masthead #site-navigation {
 		display: block;
 	}
+
 	#masthead #site-navigation .menu-toggle {
 		margin: 20px auto 0;
 		text-transform: uppercase;
@@ -1346,26 +1401,29 @@ footer .site-info .footer-menu #footer-menu li {
 }
 
 @media screen and (max-width: 480px) {
+
 	footer .site-info .footer-menu {
 		flex-wrap: wrap;
 		margin-bottom: 20px;
 	}
+
 	footer .site-info .footer-menu #more-by {
 		flex-basis: 100%;
 		margin-bottom: 10px;
 	}
+
 	footer .site-info .footer-menu #footer-menu li {
 		padding: 0 10px;
 	}
 }
 
 @media screen and (max-width: 425px) {
+
 	footer .site-info .footer-menu #footer-menu {
 		flex-direction: column;
 	}
+
 	footer .site-info .footer-menu #footer-menu li {
 		padding-bottom: 10px;
 	}
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -14,14 +14,14 @@
 		article {
 			padding: 0 10px;
 			opacity: 0;
-			animation: 1s ease 1 stagger-load forwards;
+			animation: 1s ease 0.5s stagger-load forwards;
 
 			@for $i from 1 through 9 {
 				// :nth-child(1-9)
 				&:nth-child(#{$i}) {
 
 					// Delay the animation. Delay increases as items loop.
-					animation-delay: ( $i * (2s / 3) );
+					animation-delay: ( $i * (1s / 3) );
 				}
 			}
 
