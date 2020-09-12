@@ -1,0 +1,12 @@
+.single {
+	.entry-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		.entry-meta {
+			font-family: $font__heading;
+			text-align: right;
+			flex: 0 1 30%;
+		}
+	}
+}

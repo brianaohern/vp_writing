@@ -1,0 +1,117 @@
+// Small screens & Laptops
+
+@media screen and (max-width: 1030px) {
+	#masthead {
+		padding-bottom: 10px;
+		padding-top: 0;
+		.site-branding .site-description {
+			margin-left: 0;
+		}
+	}
+	.main-navigation li {
+		padding: 20px 10px;
+	}
+	.container.has-sidebar #secondary {
+		flex-basis: 250px;
+		padding: 0;
+	}
+	.archive .entry-content,
+	.archive .entry-header,
+	.archive .entry-meta {
+		padding: 0 15px;
+	}
+	.archive .column-wrapper article .entry-title {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	#masthead {
+		flex-wrap: wrap;
+		text-align: center;
+		.site-branding {
+			flex-basis: 100%;
+		}
+		#site-navigation {
+			flex-basis: 100%;
+			&.main-navigation ul {
+				justify-content: center;
+				margin-top: 15px;
+				li {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+	.archive .three-col article {
+		flex-basis: $columns-2;
+	}
+	footer .site-info .footer-menu #footer-menu li {
+		padding: 0 0 0 15px;
+	}
+}
+
+// Tablets
+
+@media screen and (max-width: 768px) {
+	.main-navigation li {
+		font-size: 90%;
+	}
+	footer .site-info {
+		flex-wrap: wrap;
+		justify-content: center;
+		.footer-menu {
+			flex-basis: 100%;
+			justify-content: center;
+			margin-bottom: 15px;
+		}
+	}
+	.container.has-sidebar {
+		flex-wrap: wrap;
+		#secondary {
+			flex-basis: 100%;
+    		margin: 0 30px 30px;
+		}
+	}
+	.archive .three-col article {
+		flex-basis: $columns-1;
+	}
+}
+
+// Phones
+
+@media screen and (max-width: 599px) {
+	#masthead #site-navigation {
+		display: block;
+		.menu-toggle {
+			margin: 20px auto 0;
+			text-transform: uppercase;
+			padding: 13px 30px;
+			font-weight: 500;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer .site-info .footer-menu {
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		#more-by {
+			flex-basis: 100%;
+			margin-bottom: 10px;
+		}
+		#footer-menu li {
+			padding: 0 10px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 425px) {
+	footer .site-info .footer-menu #footer-menu {
+		flex-direction: column;
+		li {
+			padding-bottom: 10px;
+		}
+	}
+}

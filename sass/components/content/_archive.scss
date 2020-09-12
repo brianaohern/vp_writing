@@ -1,0 +1,47 @@
+.archive {
+	.page-header {
+		padding: 40px 30px 0;
+		margin: 1.5em auto 0;
+		.archive-description {
+			font-family: $font__heading;
+		}
+	}
+	.column-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		article {
+			padding: 0 10px;
+			opacity: 0;
+			animation: 1s ease 1 stagger-load forwards;
+
+			@for $i from 1 through 9 {
+				// :nth-child(1-9)
+				&:nth-child(#{$i}) {
+
+					// Delay the animation. Delay increases as items loop.
+					animation-delay: ( $i * (2s / 3) );
+				}
+			}
+
+			.entry-header {
+				padding-top: 15px;
+			}
+
+			.entry-title {
+				font-size: 27px;
+    			font-weight: 500;
+			}
+		}
+	}
+	.three-col article {
+		flex: 0 1 $columns-3;
+	}
+	.entry-meta {
+		font-style: italic;
+		font-size: 15px;
+		line-height: 26px;
+		text-align: left;
+	}
+}
