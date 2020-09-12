@@ -34,7 +34,7 @@
 			<div id="website-creator">
 				<?php
 					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Website created by %1$s', 'vp_writing' ), '<a href="https://brianaohern.com" target="_blank">Briana O\'Hern</a>' );
+					printf( esc_html__( 'Website created by %1$s.', 'vp_writing' ), '<a href="https://brianaohern.com" target="_blank">Briana O\'Hern</a>' );
 				?>
 			</div>
 		</div><!-- .site-info -->
